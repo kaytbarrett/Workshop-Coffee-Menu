@@ -26,3 +26,14 @@ console.log(itemsUnderFive);
 const onlyEven = coffeeMenu.filter(item => item.price % 2 === 0 );
 
 console.log(onlyEven);
+
+//Prompt 5
+//Print the total if you were to order one of every drink.
+
+
+const totalValue = coffeeMenu.reduce(
+    (accumulator, currentValue) => accumulator + currentValue.price,
+    0
+)
+
+console.log(totalValue)
