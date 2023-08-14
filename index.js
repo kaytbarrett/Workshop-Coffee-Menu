@@ -4,8 +4,9 @@ const coffeeMenu = require("./coffee_data.js");
 //Prompt 2
 //Print an array of all the drinks on the menu.
 
-const drinks = coffeeMenu.map(item => item.name)
-console.log(drinks)
+const drinks = coffeeMenu.map(item => item.name);
+console.log(drinks);
+
 
 //Prompt 3
 //Print an array of drinks that cost 5 and under.
@@ -19,4 +20,9 @@ const underFive = (item) => {
 const itemsUnderFive = coffeeMenu.filter(underFive);
 console.log(itemsUnderFive);
 
+//Prompt 4
+//Print an array of drinks that are priced at an even number.
 
+const onlyEven = coffeeMenu.filter(item => item.price % 2 === 0 );
+
+console.log(onlyEven);
