@@ -41,5 +41,11 @@ console.log(totalValue);
 //Prompt 6
 //Print an array with all the drinks that are seasonal.
 
-const seasonal =coffeeMenu.filter(item => item.seasonal === true);
+const seasonal = coffeeMenu.filter(item => item.seasonal === true);
 console.log(seasonal);
+
+//Prompt 7
+//Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
+
+const seasonalWithMessage = seasonal.map(item => item.name + " with imported beans");
+console.log(seasonalWithMessage);
