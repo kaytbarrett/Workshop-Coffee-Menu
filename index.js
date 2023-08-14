@@ -36,4 +36,10 @@ const totalValue = coffeeMenu.reduce(
     0
 )
 
-console.log(totalValue)
+console.log(totalValue);
+
+//Prompt 6
+//Print an array with all the drinks that are seasonal.
+
+const seasonal =coffeeMenu.filter(item => item.seasonal === true);
+console.log(seasonal);
